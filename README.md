@@ -79,8 +79,8 @@ python -m PyInstaller --noconfirm --clean --distpath dist --workpath build valor
 
 ## 免责声明
 
-- 仅供**学习研究**。`images/` 中的游戏素材（干员头像、武器 / 护甲 / 大招图标、backdrop 等）
-  版权归 **Riot Games** 所有，请勿用于商业用途或再分发盈利。
+- 仅供**学习研究**。`images/` 中从游戏提取/参考的素材——干员头像 `icon/`、武器 `weapon/`、护甲 `armor/`、大招图标 `ult/`、模板 `agents_tmpl/`、`other/` 等——版权归 **Riot Games** 所有，请勿用于商业用途或再分发盈利。
+- `images/backdrop/`（HUD 卡片底色 / 死亡底色，atk_l / atk_r / def_l / def_r / atkdie_l / defdie_r）为**作者原创绘制**的美术作品，版权归作者本人，随本项目一并以 GPLv3 条款发布。
 - 运行产物 `output/*.json` 含真实对局与玩家昵称，已由 `.gitignore` 排除。
 - 本软件界面作者信息见应用内（B 站 @丶慕邵）。
 
