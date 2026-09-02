@@ -1,0 +1,2 @@
+# 开发/打包用（运行依赖见 requirements.txt）
+pyinstaller>=6.0

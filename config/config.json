@@ -1,0 +1,95 @@
+{
+  "version": 1,
+  "capture": {
+    "window_title_keyword": "VALORANT",
+    "fps_cap": 20.0,
+    "cache_size": 20,
+    "method": "auto"
+  },
+  "recognition": {
+    "real_time_fps": 0.0,
+    "confidence_threshold": 0.8,
+    "agent_threshold": 0.5,
+    "avatar_pad_frac": 0.15,
+    "digit_threshold": 0.5,
+    "alive_threshold": 0.7,
+    "alive_pad_frac": 0.09,
+    "weapon_threshold": 0.7,
+    "armor_threshold": 0.5,
+    "digit_regex": "^\\d{1,3}$",
+    "credits_regex": "^\\d{1,5}$",
+    "strip_chars": ", ",
+    "spike_region": [
+      0.276563,
+      0.312963,
+      0.297396,
+      0.684259
+    ],
+    "spike_template": "Spike.png",
+    "spike_threshold": 0.6
+  },
+  "ocr": {
+    "device": "gpu",
+    "detection_model": "PP-OCRv6_small_det",
+    "recognition_model": "PP-OCRv6_small_rec",
+    "use_doc_orientation_classify": false,
+    "use_doc_unwarping": false,
+    "use_textline_orientation": false,
+    "warmup_calls": 3,
+    "batch_rois": true,
+    "det_box_thresh": 0.3
+  },
+  "templates": {
+    "agents_dir": "images/icon",
+    "agents_override_dir": "images/agents_tmpl",
+    "weapons_dir": "images/weapon",
+    "armor_dir": "images/armor",
+    "ult_dir": "images/ult",
+    "other_dir": "images/other",
+    "agents_suffix": "_icon",
+    "weapons_suffix": "_icon",
+    "armor_suffix": "",
+    "scale_factors": [
+      0.8,
+      0.9,
+      1.0,
+      1.1,
+      1.2
+    ],
+    "match_threshold": 0.8
+  },
+  "side": {
+    "attack_hue_ranges": [
+      [
+        0,
+        8
+      ],
+      [
+        170,
+        179
+      ]
+    ],
+    "defense_hue_ranges": [
+      [
+        70,
+        135
+      ]
+    ]
+  },
+  "alive": {
+    "dead_max_v": 82,
+    "alive_min_v": 94
+  },
+  "json_output": {
+    "scoreboard": "output/scoreboard.json",
+    "init": "output/init.json"
+  },
+  "hud": {
+    "margin_side": 10,
+    "scale": 1.5,
+    "spacing": 0,
+    "margin_bottom": 0,
+    "font": "方正兰亭中粗黑_GBK,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,Regular,0,0"
+  },
+  "layout": null
+}

@@ -1,0 +1,14 @@
+# 运行依赖（Python 3.10+）
+# OCR 识别为 GPU 推理（config.json: ocr.device）。CPU 机器把 paddlepaddle-gpu 换成
+# paddlepaddle，并把 config.json 的 ocr.device 改为 "cpu"。
+# 识别模型 PP-OCRv6_small_det / PP-OCRv6_small_rec 首次运行自动下载到 ~/.paddlex（需联网一次）。
+PySide6>=6.5
+numpy>=1.24
+opencv-python>=4.8
+mss>=9.0
+paddleocr>=3.0
+paddlepaddle-gpu>=3.0.0
+paddlex>=3.0
+
+# 打包（可选）：python -m PyInstaller --noconfirm --clean --distpath dist --workpath build valorant_hud.spec
+# pyinstaller>=6.0

@@ -1,0 +1,25 @@
+# ---- 构建产物 ----
+dist/
+build/
+*.spec.bak
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+
+# ---- 本地运行产物（含真实对局/昵称/玩家数据，勿提交）----
+text/
+output/*.json
+output/*.tmp
+
+# ---- 离线模型缓存（打包内置模型用，见 valorant_hud.spec 注释）----
+paddlex_cache/
+
+# ---- 工具 / 系统 ----
+.claude/
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini

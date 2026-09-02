@@ -1,0 +1,1953 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>700</width>
+    <height>680</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>700</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>700</width>
+    <height>100000</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>无畏契约HUD v1.2.0</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <item>
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="mouseTracking">
+      <bool>false</bool>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QTabBar::tab {
+    height: 35px;   /* 设置标签的高度 */
+    font-size: 14px; /* 字体调大一点显得更协调 */
+}</string>
+     </property>
+     <property name="tabPosition">
+      <enum>QTabWidget::TabPosition::North</enum>
+     </property>
+     <property name="tabShape">
+      <enum>QTabWidget::TabShape::Rounded</enum>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <property name="usesScrollButtons">
+      <bool>true</bool>
+     </property>
+     <property name="documentMode">
+      <bool>true</bool>
+     </property>
+     <property name="tabsClosable">
+      <bool>false</bool>
+     </property>
+     <property name="movable">
+      <bool>true</bool>
+     </property>
+     <property name="tabBarAutoHide">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="tab">
+      <attribute name="title">
+       <string>作为发送端</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_5">
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="styleSheet">
+          <string notr="true">background-color: #fff2bc;
+border:2px solid black;
+padding:8px;
+color:#593800;</string>
+         </property>
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;运行要求：游戏需以【窗口化(有边框)】运行，支持的分辨率为1920*1080或1280*720；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;本程序的文件路径必须为全英文路径。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;软件免费下载使用，唯一作者请搜索B站up主“丶慕邵”&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_2">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>选择游戏进程窗口</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox_2"/>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_5">
+         <property name="text">
+          <string>开始读取计分板</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton">
+         <property name="text">
+          <string>TAB键刷新</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_2">
+         <property name="text">
+          <string>计分板预览</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_11">
+         <item>
+          <widget class="QLabel" name="label_15">
+           <property name="text">
+            <string>1号玩家</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_16">
+           <property name="text">
+            <string>6号玩家</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <widget class="QComboBox" name="comboBox_15">
+           <item>
+            <property name="text">
+             <string>薇丝 Vyse</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>钢锁 Deadlock</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>尚勃勒 Chamber</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>奇乐 Killjoy</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>零 Cypher</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>贤者 Sage</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>盖可 Gekko</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>黑梦 Fade</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>K/O KAY/O</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>丝凯 Skye</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>铁臂 Breach</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>猎枭 Sova</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>暮蝶 Clove</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>海神 Harbor</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>星礈 Astra</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>幽影 Omen</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>蝰蛇 Viper</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>炼狱 Brimstone</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>壹决 Iso</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>霓虹 Neon</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>夜露 Yoru</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>雷兹 Raze</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>芮娜 Reyna</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>不死鸟 Phoenix</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>捷风 Jett</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>迷核 Miks</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>钛狐 Waylay</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>幻棱 Tejo</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>禁灭 Veto</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_14"/>
+         </item>
+         <item>
+          <widget class="QComboBox" name="comboBox_16">
+           <item>
+            <property name="text">
+             <string>薇丝 Vyse</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>钢锁 Deadlock</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>尚勃勒 Chamber</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>奇乐 Killjoy</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>零 Cypher</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>贤者 Sage</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>盖可 Gekko</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>黑梦 Fade</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>K/O KAY/O</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>丝凯 Skye</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>铁臂 Breach</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>猎枭 Sova</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>暮蝶 Clove</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>海神 Harbor</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>星礈 Astra</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>幽影 Omen</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>蝰蛇 Viper</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>炼狱 Brimstone</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>壹决 Iso</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>霓虹 Neon</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>夜露 Yoru</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>雷兹 Raze</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>芮娜 Reyna</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>不死鸟 Phoenix</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>捷风 Jett</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>迷核 Miks</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>钛狐 Waylay</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>幻棱 Tejo</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>禁灭 Veto</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_15"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_13">
+         <item>
+          <widget class="QLabel" name="label_19">
+           <property name="text">
+            <string>2号玩家</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_20">
+           <property name="text">
+            <string>7号玩家</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_6">
+         <item>
+          <widget class="QComboBox" name="comboBox_19">
+           <item>
+            <property name="text">
+             <string>薇丝 Vyse</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>钢锁 Deadlock</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>尚勃勒 Chamber</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>奇乐 Killjoy</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>零 Cypher</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>贤者 Sage</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>盖可 Gekko</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>黑梦 Fade</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>K/O KAY/O</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>丝凯 Skye</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>铁臂 Breach</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>猎枭 Sova</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>暮蝶 Clove</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>海神 Harbor</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>星礈 Astra</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>幽影 Omen</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>蝰蛇 Viper</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>炼狱 Brimstone</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>壹决 Iso</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>霓虹 Neon</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>夜露 Yoru</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>雷兹 Raze</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>芮娜 Reyna</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>不死鸟 Phoenix</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>捷风 Jett</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>迷核 Miks</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>钛狐 Waylay</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>幻棱 Tejo</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>禁灭 Veto</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_18"/>
+         </item>
+         <item>
+          <widget class="QComboBox" name="comboBox_20">
+           <item>
+            <property name="text">
+             <string>薇丝 Vyse</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>钢锁 Deadlock</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>尚勃勒 Chamber</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>奇乐 Killjoy</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>零 Cypher</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>贤者 Sage</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>盖可 Gekko</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>黑梦 Fade</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>K/O KAY/O</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>丝凯 Skye</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>铁臂 Breach</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>猎枭 Sova</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>暮蝶 Clove</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>海神 Harbor</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>星礈 Astra</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>幽影 Omen</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>蝰蛇 Viper</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>炼狱 Brimstone</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>壹决 Iso</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>霓虹 Neon</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>夜露 Yoru</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>雷兹 Raze</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>芮娜 Reyna</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>不死鸟 Phoenix</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>捷风 Jett</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>迷核 Miks</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>钛狐 Waylay</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>幻棱 Tejo</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>禁灭 Veto</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_19"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_14">
+         <item>
+          <widget class="QLabel" name="label_21">
+           <property name="text">
+            <string>3号玩家</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_22">
+           <property name="text">
+            <string>8号玩家</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_7">
+         <item>
+          <widget class="QComboBox" name="comboBox_21">
+           <item>
+            <property name="text">
+             <string>薇丝 Vyse</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>钢锁 Deadlock</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>尚勃勒 Chamber</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>奇乐 Killjoy</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>零 Cypher</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>贤者 Sage</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>盖可 Gekko</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>黑梦 Fade</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>K/O KAY/O</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>丝凯 Skye</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>铁臂 Breach</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>猎枭 Sova</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>暮蝶 Clove</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>海神 Harbor</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>星礈 Astra</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>幽影 Omen</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>蝰蛇 Viper</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>炼狱 Brimstone</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>壹决 Iso</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>霓虹 Neon</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>夜露 Yoru</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>雷兹 Raze</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>芮娜 Reyna</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>不死鸟 Phoenix</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>捷风 Jett</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>迷核 Miks</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>钛狐 Waylay</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>幻棱 Tejo</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>禁灭 Veto</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_20"/>
+         </item>
+         <item>
+          <widget class="QComboBox" name="comboBox_22">
+           <item>
+            <property name="text">
+             <string>薇丝 Vyse</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>钢锁 Deadlock</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>尚勃勒 Chamber</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>奇乐 Killjoy</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>零 Cypher</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>贤者 Sage</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>盖可 Gekko</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>黑梦 Fade</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>K/O KAY/O</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>丝凯 Skye</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>铁臂 Breach</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>猎枭 Sova</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>暮蝶 Clove</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>海神 Harbor</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>星礈 Astra</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>幽影 Omen</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>蝰蛇 Viper</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>炼狱 Brimstone</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>壹决 Iso</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>霓虹 Neon</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>夜露 Yoru</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>雷兹 Raze</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>芮娜 Reyna</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>不死鸟 Phoenix</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>捷风 Jett</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>迷核 Miks</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>钛狐 Waylay</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>幻棱 Tejo</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>禁灭 Veto</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_22"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_15">
+         <item>
+          <widget class="QLabel" name="label_25">
+           <property name="text">
+            <string>4号玩家</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_26">
+           <property name="text">
+            <string>9号玩家</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_8">
+         <item>
+          <widget class="QComboBox" name="comboBox_23">
+           <item>
+            <property name="text">
+             <string>薇丝 Vyse</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>钢锁 Deadlock</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>尚勃勒 Chamber</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>奇乐 Killjoy</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>零 Cypher</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>贤者 Sage</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>盖可 Gekko</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>黑梦 Fade</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>K/O KAY/O</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>丝凯 Skye</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>铁臂 Breach</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>猎枭 Sova</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>暮蝶 Clove</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>海神 Harbor</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>星礈 Astra</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>幽影 Omen</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>蝰蛇 Viper</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>炼狱 Brimstone</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>壹决 Iso</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>霓虹 Neon</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>夜露 Yoru</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>雷兹 Raze</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>芮娜 Reyna</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>不死鸟 Phoenix</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>捷风 Jett</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>迷核 Miks</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>钛狐 Waylay</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>幻棱 Tejo</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>禁灭 Veto</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_23"/>
+         </item>
+         <item>
+          <widget class="QComboBox" name="comboBox_24">
+           <item>
+            <property name="text">
+             <string>薇丝 Vyse</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>钢锁 Deadlock</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>尚勃勒 Chamber</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>奇乐 Killjoy</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>零 Cypher</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>贤者 Sage</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>盖可 Gekko</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>黑梦 Fade</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>K/O KAY/O</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>丝凯 Skye</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>铁臂 Breach</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>猎枭 Sova</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>暮蝶 Clove</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>海神 Harbor</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>星礈 Astra</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>幽影 Omen</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>蝰蛇 Viper</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>炼狱 Brimstone</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>壹决 Iso</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>霓虹 Neon</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>夜露 Yoru</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>雷兹 Raze</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>芮娜 Reyna</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>不死鸟 Phoenix</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>捷风 Jett</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>迷核 Miks</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>钛狐 Waylay</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>幻棱 Tejo</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>禁灭 Veto</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_24"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_16">
+         <item>
+          <widget class="QLabel" name="label_27">
+           <property name="text">
+            <string>5号玩家</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_28">
+           <property name="text">
+            <string>10号玩家</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_9">
+         <item>
+          <widget class="QComboBox" name="comboBox_25">
+           <item>
+            <property name="text">
+             <string>薇丝 Vyse</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>钢锁 Deadlock</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>尚勃勒 Chamber</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>奇乐 Killjoy</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>零 Cypher</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>贤者 Sage</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>盖可 Gekko</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>黑梦 Fade</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>K/O KAY/O</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>丝凯 Skye</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>铁臂 Breach</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>猎枭 Sova</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>暮蝶 Clove</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>海神 Harbor</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>星礈 Astra</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>幽影 Omen</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>蝰蛇 Viper</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>炼狱 Brimstone</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>壹决 Iso</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>霓虹 Neon</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>夜露 Yoru</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>雷兹 Raze</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>芮娜 Reyna</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>不死鸟 Phoenix</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>捷风 Jett</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>迷核 Miks</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>钛狐 Waylay</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>幻棱 Tejo</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>禁灭 Veto</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_25"/>
+         </item>
+         <item>
+          <widget class="QComboBox" name="comboBox_26">
+           <item>
+            <property name="text">
+             <string>薇丝 Vyse</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>钢锁 Deadlock</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>尚勃勒 Chamber</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>奇乐 Killjoy</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>零 Cypher</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>贤者 Sage</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>盖可 Gekko</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>黑梦 Fade</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>K/O KAY/O</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>丝凯 Skye</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>铁臂 Breach</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>猎枭 Sova</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>暮蝶 Clove</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>海神 Harbor</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>星礈 Astra</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>幽影 Omen</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>蝰蛇 Viper</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>炼狱 Brimstone</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>壹决 Iso</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>霓虹 Neon</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>夜露 Yoru</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>雷兹 Raze</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>芮娜 Reyna</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>不死鸟 Phoenix</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>捷风 Jett</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>迷核 Miks</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>钛狐 Waylay</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>幻棱 Tejo</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>禁灭 Veto</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_26"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_11">
+         <property name="text">
+          <string>确认无误后开始发送数据</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_7">
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;未开始发送&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_30">
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;未开始识别&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_8">
+         <property name="text">
+          <string>帧处理：-- | 平均：--</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_2">
+      <attribute name="title">
+       <string>作为接收端</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_4">
+         <item>
+          <widget class="QLabel" name="label_3">
+           <property name="maximumSize">
+            <size>
+             <width>90</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>发送端地址</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignmentFlag::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit">
+           <property name="maximumSize">
+            <size>
+             <width>440</width>
+             <height>16777215</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_3">
+           <property name="text">
+            <string>连接</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_6">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::LayoutDirection::LeftToRight</enum>
+           </property>
+           <property name="text">
+            <string>未连接</string>
+           </property>
+           <property name="textFormat">
+            <enum>Qt::TextFormat::PlainText</enum>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignmentFlag::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_7">
+         <property name="text">
+          <string>启动HUD覆盖层</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_4">
+         <property name="text">
+          <string>帧间隔：-- | 平均：-- | 已接收0帧</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_5">
+         <property name="text">
+          <string>设置HUD布局</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="QLabel" name="label_9">
+           <property name="text">
+            <string>左右距离</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_2"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_11">
+           <property name="text">
+            <string>缩放大小</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_4">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_10">
+           <property name="text">
+            <string>行间隙</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_3"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_12">
+           <property name="text">
+            <string>底部距离</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_5">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_4">
+         <property name="text">
+          <string>改变文本样式</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_13">
+         <property name="text">
+          <string>数据预览</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTableWidget" name="tableWidget"/>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
