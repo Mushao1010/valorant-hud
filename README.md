@@ -33,7 +33,7 @@ receiver/             接收端：WebSocket 客户端 + 对局状态模型
 output/               JSON 写出（scoreboard/init；运行产物已 gitignore）
 images/               模板素材（干员头像、武器、护甲、大招图标、backdrop 等）
 icon.png              应用图标
-valorant_hud.spec     PyInstaller 打包配置（单一通用版，覆盖 40/50 系显卡）
+valorant_hud.spec     PyInstaller 打包配置（单一通用版，覆盖50系及以下显卡）
 run_dev.bat           开发启动（自动 UAC 提权；解释器：%PYTHON% > py > python）
 requirements.txt      运行依赖
 ```
