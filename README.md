@@ -5,12 +5,6 @@
 WebSocket 广播给 HUD，以**置顶透明叠层**按游戏内风格渲染在屏幕上；也可导出
 分层 PNG 供 OBS 叠加，或让第二台机器作"接收端"独立显示。
 
-```
-            识别端（发送端）                      接收端
-  valorant_hud.py  ──WS 广播──►  broadcast_server.py
-  捕获计分板帧 ── OCR/模板 ──►   ──►  hud_overlay.py (置顶透明 HUD)
-                                    ──►  PlayerCard 分层 PNG (OBS)
-```
 
 ## 功能
 
